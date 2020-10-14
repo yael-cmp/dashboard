@@ -1,0 +1,19 @@
+@import "../vas.scss";
+@import "./card.scss";
+
+.grid {
+  display: grid;
+  width: 100%;
+  grid-row: auto;
+
+  gap: 20px;
+  @include for-size(xl) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  @include for-size(l) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  @include for-size(m) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

@@ -1,0 +1,88 @@
+@import "../vas.scss";
+.card {
+  color: $white-t;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: column;
+  background-color: $dark-desaturated-blue;
+  border-radius: 5px;
+}
+.DARK .card {
+  color: $blue-t;
+  background-color: $light-grayfish-blue;
+}
+.overv {
+  color: $white-t;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: $dark-desaturated-blue;
+  border-radius: 5px;
+}
+.DARK .overv {
+  color: $blue-t;
+  background-color: $light-grayfish-blue;
+}
+
+.card:hover,
+.overv:hover {
+  filter: brightness(0.9);
+  opacity: 0.9;
+}
+
+.overv--p {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  h1 {
+    margin-top: 0;
+  }
+}
+.bord {
+  border-radius: 5px 5px 0 0;
+  width: 100%;
+  height: 5px;
+}
+.facebook {
+  background: $facebook;
+}
+.instagram {
+  background: $instagram;
+}
+.twitter {
+  background: $twitter;
+}
+.youtube {
+  background: $youtube;
+}
+.card--p {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 0;
+  .card--p-user {
+    margin-left: 10px;
+    font-weight: 600;
+  }
+}
+.card--icon {
+  object-fit: contain;
+}
+.card--f {
+  text-transform: uppercase;
+  margin: 0 auto;
+  font-weight: 300;
+  letter-spacing: 4px;
+}
+.card--non {
+  font-size: 3.2rem;
+  margin: 0;
+}
+.card-not-ok {
+  color: $bright-red;
+}
+.card-ok {
+  color: $lime-green;
+}
